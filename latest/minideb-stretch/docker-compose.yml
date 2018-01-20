@@ -1,8 +1,0 @@
-version: '2.3'
-
-services:
-  bats-core:
-    build:
-      context: ../
-      dockerfile: minideb-stretch/Dockerfile
-    image: djschaper/bats-core:latest-minideb-stretch
