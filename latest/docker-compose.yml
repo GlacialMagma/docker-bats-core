@@ -1,8 +1,13 @@
 version: '2.3'
 
 services:
-  bats-core:
+  minideb:
     build:
       context: . 
       dockerfile: Dockerfile.stretch
     image: djschaper/bats-core:latest
+  alpine:
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+    image: djschaper/bats-core:latest-alpine

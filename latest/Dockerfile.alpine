@@ -1,0 +1,10 @@
+FROM alpine:3.7
+
+WORKDIR /opt/bats/
+
+ADD source/ .
+
+RUN apk add --no-cache bash && \
+    ./install.sh /usr/local
+
+CMD ["/usr/local/bin/bats"]
